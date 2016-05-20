@@ -1,0 +1,15 @@
+c2105aefdc42f3cc920380ff73428e39 *DESCRIPTION
+b3b6b8e165726bcf09cedf318185f592 *LICENSE
+c6927ef185cbfe01890330cd972af606 *NAMESPACE
+6d5b95414136030c9237a50f9424e410 *R/binst.R
+f50f4e12b98617da83caa491a9eee8e2 *man/create_bins.Rd
+e113cc6efcfd9a01594efe532ac8f259 *man/create_breaks.Rd
+5f53e6cec9b6f8621f96b99dd3a44611 *man/create_dtbreaks.Rd
+1f2e2f35a006982e3336f73d489cc178 *man/create_kmeansbreaks.Rd
+62516ca24348856d53f7683b041dd6f7 *man/create_mdlpbreaks.Rd
+47a5b673d3a8963e1118d0c96d7e9091 *man/get_control.Rd
+6420e4b9bec674daf66e620b072337f4 *tests/testthat.R
+793a98aedb3a55a6b7763912a3670741 *tests/testthat/test_createbins.R
+af8eef3087637764a7daf57497c065c1 *tests/testthat/test_dt.R
+12f138c7aa863d361f1a2aba9650e991 *tests/testthat/test_entropy.R
+8d5673efab44a4b173111de072a63d38 *tests/testthat/test_kmeans.R
