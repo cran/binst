@@ -2,5 +2,12 @@
 
 export(create_bins)
 export(create_breaks)
+export(create_dtbreaks)
+export(create_earthbreaks)
+export(create_jenksbreaks)
+export(create_kmeansbreaks)
+export(create_mdlpbreaks)
+export(get_control)
 importFrom(stats,aggregate)
+importFrom(stats,complete.cases)
 importFrom(stats,kmeans)

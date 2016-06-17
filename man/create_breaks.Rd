@@ -4,16 +4,18 @@
 \alias{create_breaks}
 \title{A convenience functon for creating breaks with various methods.}
 \usage{
-create_breaks(x, y = NULL, method = "kmeans", control = NULL)
+create_breaks(x, y = NULL, method = "kmeans", control = NULL, ...)
 }
 \arguments{
 \item{x}{X is a numeric vector to be discretized}
 
 \item{y}{Y is the response vector used for calculating metrics for discretization}
 
-\item{method}{Method is the type of discretization approach used. Possible methods are: "dt", "entropy", "kmeans"}
+\item{method}{Method is the type of discretization approach used. Possible methods are: "dt", "entropy", "kmeans", "jenks"}
 
 \item{control}{Control is used for optional parameters for the method. It is a list of optional parameters for the function}
+
+\item{...}{instead of passing a list into control, arguments can be parsed as is.}
 }
 \value{
 A vector containing the breaks
@@ -25,10 +27,17 @@ A convenience functon for creating breaks with various methods.
 kmeans_breaks <- create_breaks(1:10)
 create_bins(1:10, kmeans_breaks)
 
+# passing the k means parameter "centers" = 4
+kmeans_breaks <- create_breaks(1:10, list(centers=4))
+create_bins(1:10, kmeans_breaks)
+
 entropy_breaks <- create_breaks(1:10, rep(c(1,2), each = 5), method="entropy")
 create_bins(1:10, entropy_breaks)
 
 dt_breaks <- create_breaks(iris$Sepal.Length, iris$Species, method="dt")
 create_bins(iris$Sepal.Length, dt_breaks)
+}
+\seealso{
+\code{\link{get_control}}, \code{\link{create_bins}}
 }
 
